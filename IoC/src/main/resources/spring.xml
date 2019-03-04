@@ -11,4 +11,14 @@
     <bean id="MessagePrinter" class="com.spring.IoC.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
+    <bean id="user" class="com.spring.IoC.User">
+        <constructor-arg name="account" value="admin"/>
+        <constructor-arg name="password" value="111"/>
+
+    </bean>
+    <bean id="userlogin" class="com.spring.IoC.UserLogin">
+        <constructor-arg name="user" ref="user">
+
+        </constructor-arg>
+    </bean>
 </beans>
