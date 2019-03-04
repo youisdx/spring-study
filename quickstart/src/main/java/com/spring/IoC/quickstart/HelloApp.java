@@ -1,4 +1,4 @@
-package com.spring.quickstart;
+package com.spring.IoC.quickstart;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

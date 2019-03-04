@@ -1,4 +1,4 @@
-package com.spring.quickstart;
+package com.spring.IoC.quickstart;
 
 import static org.junit.Assert.assertTrue;
 

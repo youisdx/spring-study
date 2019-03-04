@@ -1,4 +1,4 @@
-package com.spring;
+package com.spring.IoC;
 
 /**
  * Hello world!
