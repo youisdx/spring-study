@@ -3,23 +3,23 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="car1" class="com.spring.IoC.xml.Car">
+    <bean id="car1" class="com.spring.Aop.IoC.xml.Car">
         <property name="brand" value="奔驰"/>
         <property name="color" value="黑色"/>
         <property name="parameter" value="3.0T"/>
     </bean>
-    <bean id="car2" class="com.spring.IoC.xml.Car">
+    <bean id="car2" class="com.spring.Aop.IoC.xml.Car">
         <property name="brand" value="劳斯莱斯"/>
         <property name="color" value="白色"/>
         <property name="parameter" value="4.0T"/>
     </bean>
-    <bean id="car3" class="com.spring.IoC.xml.Car">
+    <bean id="car3" class="com.spring.Aop.IoC.xml.Car">
         <property name="brand" value="宝马"/>
         <property name="color" value="黑色"/>
         <property name="parameter" value="4.0T"/>
     </bean>
 
-    <bean id="boss1" class="com.spring.IoC.xml.Boss">
+    <bean id="boss1" class="com.spring.Aop.IoC.xml.Boss">
         <property name="name" value="马云"/>
         <property name="company" value="阿里巴巴"/>
         <property name="car" ref="car1"/>
@@ -30,7 +30,7 @@
             </list>
         </property>
     </bean>
-    <bean id="boss2" class="com.spring.IoC.xml.Boss">
+    <bean id="boss2" class="com.spring.Aop.IoC.xml.Boss">
         <property name="name" value="马化腾"/>
         <property name="company" value="腾讯"/>
         <property name="car" ref="car2"/>
@@ -41,7 +41,7 @@
             </list>
         </property>
     </bean>
-    <bean id="boss3" class="com.spring.IoC.xml.Boss">
+    <bean id="boss3" class="com.spring.Aop.IoC.xml.Boss">
         <property name="name" value="乔布斯"/>
         <property name="company" value="苹果"/>
         <property name="car" ref="car3"/>
@@ -52,7 +52,7 @@
             </list>
         </property>
     </bean>
-    <bean id="meeting" class="com.spring.IoC.xml.Meeting">
+    <bean id="meeting" class="com.spring.Aop.IoC.xml.Meeting">
     <property name="theme" value="会议"/>
     <property name="bosses">
            <list>
@@ -64,7 +64,7 @@
     </bean>
 
     <!--配置一个Max的bean-->
-    <bean id="max" class="com.spring.IoC.Max">
+    <bean id="max" class="com.spring.Aop.IoC.Max">
         <property name="a" value="5"/>
         <property name="b" value="3"/>
     </bean>

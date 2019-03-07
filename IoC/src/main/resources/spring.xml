@@ -4,19 +4,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--定义bean -->
-    <bean id="messageServiceImpl" class="com.spring.IoC.MessageServiceImpl">
+    <bean id="messageServiceImpl" class="com.spring.Aop.IoC.MessageServiceImpl">
         <constructor-arg name="username" value="Tom"/>
         <constructor-arg name="age" value="20"/>
     </bean>
-    <bean id="MessagePrinter" class="com.spring.IoC.MessagePrinter">
+    <bean id="MessagePrinter" class="com.spring.Aop.IoC.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
-    <bean id="user" class="com.spring.IoC.User">
+    <bean id="user" class="com.spring.Aop.IoC.User">
         <constructor-arg name="account" value="admin"/>
         <constructor-arg name="password" value="111"/>
 
     </bean>
-    <bean id="userlogin" class="com.spring.IoC.UserLogin">
+    <bean id="userlogin" class="com.spring.Aop.IoC.UserLogin">
         <constructor-arg name="user" ref="user">
 
         </constructor-arg>
