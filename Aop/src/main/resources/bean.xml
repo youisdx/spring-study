@@ -12,4 +12,16 @@
             <aop:before method="beforeMethod" pointcut-ref="myPointCut"/>
         </aop:aspect>
     </aop:config>
+
+         <bean id="userDao" class="com.spring.Aop.UserDaoImpl"/>
+
+         <bean id="beforeAdvice" class="com.spring.Aop.BeforeAdvice"/>
+    <aop:config>
+        <aop:aspect id="before" ref="beforeAdvice">
+            <aop:pointcut id="myPointCut" expression="execution(* com.spring.Aop.*.*(..))"/>
+            <aop:before method="beforeAdvice" pointcut-ref="myPointCut"/>
+        </aop:aspect>
+    </aop:config>
+
+
 </beans>
