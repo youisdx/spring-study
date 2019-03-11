@@ -23,5 +23,10 @@
         </aop:aspect>
     </aop:config>
 
+    <!--启动AspectJ支持-->
+     <aop:aspectj-autoproxy/>
+    <!--定义bean-->
+    <bean id="fighter" class="com.spring.Aop.Fighter"/>
+    <bean id="tiger" class="com.spring.Aop.Tiger"/>
 
 </beans>
