@@ -9,12 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Aop" />
         <module name="IoC" />
+        <module name="Web" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Aop" target="1.8" />
       <module name="IoC" target="1.8" />
+      <module name="ORM" target="1.8" />
       <module name="quickstart" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="Web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

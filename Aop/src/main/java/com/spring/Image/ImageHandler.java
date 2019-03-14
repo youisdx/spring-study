@@ -42,7 +42,7 @@ public class ImageHandler {
         Color color = new Color(211,71,38);
         int size =60;
         Font font = new Font("微软雅黑",Font.BOLD,size);
-        String text="@微信号：hj";
+        String text="@微信号：youisdx";
         ImageUtil.pressText(srcFile,destFile,text,color,font,(width-text.length() * size)/2,height/2-size,1.0f);
     }
     @AfterReturning("handleImage()")
